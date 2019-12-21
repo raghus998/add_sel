@@ -1,6 +1,5 @@
 package links;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -12,27 +11,27 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Demo3 
+public class Demo4
 {
 	static
 	{
-		WebDriverManager.firefoxdriver().setup();
+		WebDriverManager.firefoxdriver().setup(); 
 	}
-	WebDriver driver;
-	@Test   
-	public void testA() throws IOException 
+	@Test
+	public void testA()
 	{
-		 driver = new FirefoxDriver();
-		driver.manage().window().maximize();
+		WebDriver driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://selenium.dev/downloads/");
+		driver.manage().window().maximize();
+		driver.get("file:///E:/Raghus/add_sel/htmlfiles/linkes.html");
 		List<WebElement> allLinks = driver.findElements(By.tagName("a"));
-		System.out.println("No of links are :"+allLinks.size());
+		System.out.println(allLinks.size());
 		for (WebElement link : allLinks) {
 			String href = link.getAttribute("href");
 			LinkUtlity.responseForLink(href);
-			System.out.println("................................");
+			System.out.println("....................");
 			
 		}
-}
+	}
+
 }

@@ -10,32 +10,28 @@ import org.testng.Reporter;
 
 public class LinkUtlity 
 {
-	public static void verifyLink(String href) throws IOException
+	public static void responseForLink(String link)
 	{
-		try
+		try 
 		{
-			URL url = new URL(href);
-			HttpURLConnection httpUrlConnection = (HttpURLConnection) url.openConnection();
-			httpUrlConnection.setConnectTimeout(2000);
-			httpUrlConnection.connect();
-			int acode = httpUrlConnection.getResponseCode();
-			String msg = httpUrlConnection.getResponseMessage();
-			URL pUrl = httpUrlConnection.getURL();
-			if (acode == 200) {
-				Reporter.log("Url is "+pUrl+"Response Code is :"+acode+"Response Msg is :"+msg);
-			} 
+			URL url = new URL(link);
+			HttpURLConnection httpUrlConection = (HttpURLConnection) url.openConnection();
+			httpUrlConection.setConnectTimeout(2000);
+			httpUrlConection.connect();
+			int code = httpUrlConection.getResponseCode();
+			String msg = httpUrlConection.getResponseMessage();
+			URL url1 = httpUrlConection.getURL();
+			if (code == 200) {
+				System.out.println(url1 + " is working fine.And response code is :" + code + " response msg is :" + msg);
+			}
 			else 
 			{
-				Reporter.log("Url is "+pUrl+"Response Code is :"+acode+"Response Msg is :"+msg);
+				System.out.println(url1 + " is broken.And response code is :" + code + " response msg is :" + msg);
 			}
-			
-
 		} 
 		catch (Exception e)
 		{
-			
-			Reporter.log("lINK IS BROKEN,",true);
+			System.out.println("Link is broken");
 		}
-		
 	}
 }
