@@ -44,7 +44,7 @@ public class Demo
 		System.out.println("Selected place is :"+text);
 		
 		
-		
+		driver.close();
 		
 		
 		
