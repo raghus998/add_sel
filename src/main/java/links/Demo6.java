@@ -40,11 +40,11 @@ public class Demo6
 			String value = image.getAttribute("value");
 			if (code == 200) 
 			{
-				System.out.println(value+"image is working fine"+"Response Code is :"+code);
+				System.out.println(value+"image is working fine"+"Response Code is :"+code+msg);
 				
 			} else 
 			{
-				System.out.println(value+"image is broken "+"Response Code is :"+code);
+				System.out.println(value+"image is broken "+"Response Code is :"+code+msg);
 
 			}
 			

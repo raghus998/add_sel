@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Title is :SeleniumHQ Browser Automation]]>
+    </line>
+    <line>
+      <![CDATA[Url is :https://selenium.dev/]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12317" started-at="2019-12-21T10:49:15 IST" finished-at="2019-12-21T10:49:27 IST">
+  <suite name="Default suite" duration-ms="11826" started-at="2019-12-22T11:12:12 IST" finished-at="2019-12-22T11:12:23 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12317" started-at="2019-12-21T10:49:15 IST" finished-at="2019-12-21T10:49:27 IST">
-      <class name="basic.Demo">
-        <test-method status="PASS" signature="testA()[pri:0, instance:basic.Demo@1530c739]" name="testA" duration-ms="12251" started-at="2019-12-21T10:49:15 IST" finished-at="2019-12-21T10:49:27 IST">
+    <test name="Default test" duration-ms="11826" started-at="2019-12-22T11:12:12 IST" finished-at="2019-12-22T11:12:23 IST">
+      <class name="headless.Demo">
+        <test-method status="PASS" signature="testA()[pri:0, instance:headless.Demo@30b7c004]" name="testA" duration-ms="11795" started-at="2019-12-22T11:12:12 IST" finished-at="2019-12-22T11:12:23 IST">
           <reporter-output>
+            <line>
+              <![CDATA[Title is :SeleniumHQ Browser Automation]]>
+            </line>
+            <line>
+              <![CDATA[Url is :https://selenium.dev/]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testA -->
-      </class> <!-- basic.Demo -->
+      </class> <!-- headless.Demo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
