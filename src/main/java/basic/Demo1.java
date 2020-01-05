@@ -25,7 +25,7 @@ public class Demo1
 	{
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get(" ");
+		driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
 		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("div[id='start'] button")).click();
 		
