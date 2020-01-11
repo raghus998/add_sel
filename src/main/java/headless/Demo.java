@@ -26,7 +26,7 @@ public class Demo
 	public void testA() throws IOException, InterruptedException
 	{
 		ChromeOptions co = new ChromeOptions();
-		co.setHeadless(true);
+		co.setHeadless(false);
 		
 		WebDriver driver = new ChromeDriver(co);
 		driver.manage().window().maximize();

@@ -1,0 +1,18 @@
+mvn clean	Clears the target directory into which Maven normally builds your project.
+
+validate 	Validates that the project is correct and all necessary information is 
+		available.This also makes sure the dependencies are downloaded.
+
+compile 	Compiles the source code of the project.
+
+test 		Runs the tests against the compiled source code using a suitable unit 
+		testing framework. 
+		These tests should not require the code be packaged or deployed.
+
+package 	Packs the compiled code in its distributable format, such as a JAR.
+
+install 	Install the package into the local repository, for use as a dependency 
+		in other projects locally.
+
+deploy 		Copies the final package to the remote repository for 
+		sharing with other developers and projects.
